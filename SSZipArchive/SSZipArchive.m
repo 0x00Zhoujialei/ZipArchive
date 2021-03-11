@@ -384,7 +384,9 @@ BOOL _fileIsSymbolicLink(const unz_file_info *fileInfo);
                 success = NO;
                 break;
             }
-            
+           	
+            unz_file_info fileInfo1;
+            unz_file_info fileInfo2; 
             // Reading data and write to file
             unz_file_info fileInfo;
             memset(&fileInfo, 0, sizeof(unz_file_info));
